@@ -72,7 +72,7 @@ export function splitKeys(keys: string) {
   return keys
     .trim()
     .split(/\s*[\|\n]\s*/)
-    .filter(k => /sk-\w{48}/.test(k))
+    .filter(k => /sb-\w{48}/.test(k))
 }
 
 export function randomKey(keys: string[]) {
