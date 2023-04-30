@@ -84,7 +84,7 @@ export const post: APIRoute = async context => {
     } = body
 
     if (pwd && pwd !== password) {
-      throw new Error("密码错误，请联系网站管理员。")
+      throw new Error("密码错误或者没填写密码，请关注公众号「Tomda」回复“密码”获取。")
     }
 
     if (!messages?.length) {
